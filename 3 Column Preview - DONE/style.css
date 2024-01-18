@@ -1,0 +1,157 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700
+ */
+
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subcontainer{
+    border-radius: 1em;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.sedans-div {
+    width: 33%;
+    min-width: 280px;
+    border-radius: 1em 0 0 1em;
+    background-color: hsl(31, 77%, 52%);
+    padding: 50px 0 50px 50px;
+}
+
+.suvs-div {
+    width: 34%;
+    min-width: 280px;
+    background-color: hsl(184, 100%, 22%);
+    padding: 50px 0 50px 50px;
+}
+
+.luxury-div {
+    width: 33%;
+    min-width: 280px;
+    border-radius: 0em 1em 1em 0em;
+    background-color: hsl(179, 100%, 13%);
+    padding: 50px 0 50px 50px;
+}
+
+.model{
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    padding: 40px 0px 30px 0;
+    font-family: "Big Shoulders Display";
+    color: rgba(255, 255, 255, 0.932);
+    text-transform: uppercase;
+}
+
+.info {
+    line-height: 25px;
+    font-family: "Lexend Deca";
+    font-weight:lighter;
+    width: 220px;
+    color: rgba(255, 255, 255, 0.884);
+    padding-bottom: 100px;
+}
+
+.btn{
+    font-family: "Lexend Deca";
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 2em;
+    padding: 15px 50px;
+    border: 1px solid white;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover{
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+}
+
+@media (max-width: 860px) {
+    .subcontainer{
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .sedans-div,
+    .suvs-div,
+    .luxury-div {
+        width: 90%;
+        margin: auto;
+        min-width: 300px;
+        padding: 20px 10px;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sedans-div {
+        border-radius: 1em 1em 0 0 ;
+    }
+    .luxury-div {
+        border-radius: 0 0 1em 1em;
+    }
+    
+    .info {
+        line-height: 25px;
+        font-family: "Lexend Deca";
+        font-weight: lighter;
+        width: 80%;
+        max-width: 400px;
+        color: rgba(255, 255, 255, 0.884);
+        padding-bottom: 50px;
+    }
+
+    .subcontainer img {
+        width: 40%;
+    }
+}
