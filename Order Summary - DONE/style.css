@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom 15em;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sub-container {
+    border-radius: 1em;
+    background-color: hsl(225, 100%, 94%);
+    width: 420px;
+    height: 42em;
+}
+
+.sub-container img {
+    max-width: 420px;
+    border-radius: 1em 1em 0 0;
+}
+
+.info-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info-div .order {
+    color: rgba(0, 0, 0, 0.911);
+    padding: 20px;
+    font-size: 2em;
+}
+
+.info-div .info {
+    line-height: 25px;
+    font-size: 1em;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+}
+
+.info-div .plan-div {
+    border-radius: 1em;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.plan-div .change {
+    padding-right: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+}
+.plan-div .change:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 255, 0.877);
+}
+
+.plan-subdiv {
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-intradiv {
+    padding-left: 10px;
+}
+
+.plan-intradiv .price{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.507);
+}
+
+.plan-intradiv .annual-info {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-div .btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-div .btn{
+    margin-top: 40px;
+    margin-bottom: 25px;
+    width: 350px;
+    height: 50px;
+    border-radius: 1em;
+    background-color: blue;
+    font-size: 1.2em;
+    border: none;
+    color: white;
+}
+
+.info-div .btn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.877);
+}
+
+.info-div .cancel-order{
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.info-div .cancel-order:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
