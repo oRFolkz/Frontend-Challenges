@@ -1,0 +1,118 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+ */
+
+ * {
+    font-family: Kumbh Sans, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ hr {
+    width: 400px;
+    border-color: #fff;
+  }
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/bg-pattern-top.svg);
+    background-position: -1300% 600%;
+    background-repeat: no-repeat;
+    transform: scaleX(1);
+    background-color: hsl(185, 75%, 39%);
+}
+
+.subcontainer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 2em;
+    background-image: url(images/bg-pattern-card.svg);
+    background-position: -91px -88px;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    padding-top: 100px;
+    height: 550px;
+    width: 450px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.card img{
+    width: 120px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+}
+.name span{
+    color: rgba(0, 0, 0, 0.493);
+    padding-left: 5px;
+}
+.location {
+    padding: 10px 0;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.493);
+    font-weight: bold;
+}
+
+.info{
+    padding-top: 50px;
+    display: flex;
+    text-align: center;
+}
+
+.stats {
+    width: 120px;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bolder;
+}
+
+.stats span{
+    font-size: 0.7em;
+    color: rgba(0, 0, 0, 0.493);
+}
